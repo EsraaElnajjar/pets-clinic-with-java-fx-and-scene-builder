@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pets2.ExperienceController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="200.0" prefWidth="727.0" style="-fx-background-color: #82cafa;">
+         <children>
+            <Label layoutX="308.0" layoutY="79.0" text="Experience">
+               <font>
+                  <Font name="Times New Roman Bold" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="109.0" layoutY="301.0" text="Years of Experience :">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tt" layoutX="362.0" layoutY="294.0" prefHeight="42.0" prefWidth="137.0" />
+      <Button fx:id="con" layoutX="514.0" layoutY="398.0" mnemonicParsing="false" onAction="#exAction" prefHeight="59.0" prefWidth="177.0" style="-fx-background-color: #82cafa; -fx-background-radius: 200;" text="Continue">
+         <font>
+            <Font name="Times New Roman Bold" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

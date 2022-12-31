@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="783.0" prefWidth="1139.0" style="-fx-background-color: #5a6fa2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pets2.MissionController">
+   <children>
+      <ImageView fitHeight="201.0" fitWidth="809.0" layoutX="-4.0" layoutY="606.0">
+         <image>
+            <Image url="@6396-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="vetsmission" layoutX="55.0" layoutY="120.0" prefHeight="360.0" prefWidth="782.0">
+        <columns>
+          <TableColumn fx:id="doctorname" prefWidth="206.40000534057617" text="Doctor Name" />
+          <TableColumn fx:id="day" prefWidth="168.0" text="Day" />
+            <TableColumn fx:id="worktime" prefWidth="204.00006103515625" text="Work Time" />
+            <TableColumn fx:id="casesnumber" prefWidth="204.00006103515625" text="Cases Number" />
+        </columns>
+      </TableView>
+      <Button fx:id="View" layoutX="309.0" layoutY="589.0" mnemonicParsing="false" onAction="#refreshAction" onMouseEntered="#reup7Action" onMouseExited="#redown7Action" prefHeight="62.0" prefWidth="168.0" style="-fx-background-color: #ffffff; -fx-background-radius: 200;" text="Refresh" textFill="#5a6fa2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="371.0" layoutY="40.0" text="Vets Mission" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="54.0" />
+         </font>
+      </Label>
+     
+         <ImageView fitHeight="569.0" fitWidth="417.0" layoutX="723.0" layoutY="239.0">
+            <Image url="@Screenshot_2022-12-20_192247-removebg-preview.png" />
+         
+      </ImageView>
+      <TextField fx:id="txt2" layoutX="272.0" layoutY="524.0" prefHeight="26.0" prefWidth="158.0" />
+      <TextField fx:id="txt1" layoutX="55.0" layoutY="524.0" prefHeight="26.0" prefWidth="205.0" />
+      <TextField fx:id="txt3" layoutX="436.0" layoutY="524.0" prefHeight="26.0" prefWidth="198.0" />
+      <TextField fx:id="txt4" layoutX="644.0" layoutY="524.0" prefHeight="26.0" prefWidth="198.0" />
+      <Button fx:id="historybutton" layoutX="535.0" layoutY="589.0" mnemonicParsing="false" onAction="#historyAction" onMouseEntered="#gupAction" onMouseExited="#gdownAction" prefHeight="62.0" prefWidth="254.0" style="-fx-background-color: #ffffff; -fx-background-radius: 200;" text="Go To Pets History" textFill="#5a6fa2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="backll" layoutX="-10.0" layoutY="14.0" mnemonicParsing="false" onAction="#backllAction" prefHeight="61.0" prefWidth="168.0" style="-fx-background-color: #5a6fa2; -fx-background-radius: 200;" text="Back" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="60.0" layoutY="495.0" text="Enter Your Email :" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="495.0" text="Update Day :" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="495.0" text="Update Time :" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="647.0" layoutY="495.0" text="Update Case Number :" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="bupdate1" layoutX="104.0" layoutY="589.0" mnemonicParsing="false" onAction="#updateAction" onMouseEntered="#up7Action" onMouseExited="#down7Action" prefHeight="62.0" prefWidth="168.0" style="-fx-background-color: #ffffff; -fx-background-radius: 200;" text="Update" textFill="#5a6fa2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

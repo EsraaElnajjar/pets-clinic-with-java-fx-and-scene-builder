@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="783.0" prefWidth="1139.0" style="-fx-background-color: #5a6fa2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pets2.FXMLregController">
+   <children>
+      <Label layoutX="459.0" layoutY="208.0" text="User name :" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="472.0" layoutY="271.0" text="Password :" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="672.0" layoutY="198.0" prefHeight="38.0" prefWidth="299.0">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="672.0" layoutY="271.0" prefHeight="32.0" prefWidth="299.0">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="b1" layoutX="677.0" layoutY="494.0" mnemonicParsing="false" onAction="#availableAction" onMouseEntered="#upAction" onMouseExited="#downAction" prefHeight="62.0" prefWidth="214.0" style="-fx-background-color: #ffffff; -fx-background-radius: 200;" text="Login" textFill="#5a6fa2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="vet" layoutX="937.0" layoutY="392.0" mnemonicParsing="false" text="Vet" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="g2" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="owner" layoutX="785.0" layoutY="392.0" mnemonicParsing="false" text="Owner" textFill="#efefef" toggleGroup="$g2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></RadioButton>
+      <ImageView fitHeight="583.0" fitWidth="587.0" layoutX="-28.0" layoutY="128.0">
+         <image>
+            <Image url="@Screenshot_2022-12-20_192614-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="491.0" layoutY="46.0" text="Login Page" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="69.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="236.0" fitWidth="1144.0" layoutY="534.0">
+         <image>
+            <Image url="@6396-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="admin" layoutX="611.0" layoutY="392.0" mnemonicParsing="false" text="Admin" textFill="#efefef" toggleGroup="$g2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="back88" layoutX="39.0" layoutY="31.0" mnemonicParsing="false" onAction="#back88Action" prefHeight="62.0" prefWidth="151.0" style="-fx-background-color: #5a6fa2; -fx-background-radius: 200;" text="Back" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

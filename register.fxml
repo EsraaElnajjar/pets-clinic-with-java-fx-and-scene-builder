@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pets2.RegisterController">
+   <children>
+      <AnchorPane layoutX="-20.0" layoutY="-5.0" prefHeight="783.0" prefWidth="1139.0" style="-fx-background-color: #5a6fa2;">
+         <children>
+            <Label layoutX="487.0" layoutY="96.0" text="First name :" textFill="#f2f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="480.0" layoutY="171.0" text="Last name :" textFill="#f2f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="555.0" layoutY="254.0" text="Email :" textFill="#f2f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="479.0" layoutY="335.0" text="User name :" textFill="#f2f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="492.0" layoutY="410.0" text="Password :" textFill="#f2f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="358.0" layoutY="491.0" text="Telephone number :" textFill="#f2f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="owner" layoutX="907.0" layoutY="555.0" mnemonicParsing="false" onAction="#group2" text="Owner" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="21.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="g1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="doctor" layoutX="584.0" layoutY="555.0" mnemonicParsing="false" onAction="#group" text="Vet" textFill="WHITE" toggleGroup="$g1">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="21.0" />
+               </font>
+            </RadioButton>
+            <ImageView fitHeight="571.0" fitWidth="455.0" layoutX="679.0" layoutY="26.0">
+               <image>
+                  <Image url="@6396-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+            <TextField id="firstname" fx:id="firstname" layoutX="753.0" layoutY="93.0" prefHeight="42.0" prefWidth="254.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TextField id="lastname" fx:id="lastname" layoutX="753.0" layoutY="168.0" prefHeight="42.0" prefWidth="254.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TextField id="email" fx:id="email" layoutX="753.0" layoutY="248.0" onAction="#emailregular" prefHeight="42.0" prefWidth="254.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TextField id="username" fx:id="username" layoutX="753.0" layoutY="331.0" prefHeight="42.0" prefWidth="254.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TextField id="telephone" fx:id="telephone" layoutX="753.0" layoutY="488.0" prefHeight="42.0" prefWidth="254.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField id="password" fx:id="password" layoutX="753.0" layoutY="407.0" prefHeight="42.0" prefWidth="254.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </PasswordField>
+            <Button id="register" fx:id="register" layoutX="872.0" layoutY="656.0" mnemonicParsing="false" onAction="#ActionRegister" onMouseEntered="#registerupAction" onMouseExited="#registerdownAction" prefHeight="71.0" prefWidth="176.0" style="-fx-background-color: #ffffff; -fx-background-radius: 200;" text="Register" textFill="#5a6fa2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="31.0" />
+               </font></Button>
+            <Label layoutX="154.0" layoutY="14.0" prefHeight="76.0" prefWidth="455.0" text="Registration Page" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="45.0" />
+               </font>
+            </Label>
+            <TextField fx:id="extext" layoutX="349.0" layoutY="549.0" prefHeight="42.0" prefWidth="218.0" promptText="Mention your experience years " visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="786.0" fitWidth="377.0" layoutX="5.0" layoutY="-1.0">
+               <image>
+                  <Image url="@Screenshot_2022-12-20_192316-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button id="register" fx:id="backregister" layoutX="438.0" layoutY="656.0" mnemonicParsing="false" onAction="#backregisterAction" onMouseEntered="#backupregAction" onMouseExited="#backdownregAction" prefHeight="71.0" prefWidth="145.0" style="-fx-background-color: #ffffff; -fx-background-radius: 200;" text="Back" textFill="#5a6fa2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="31.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="admin1" layoutX="740.0" layoutY="555.0" mnemonicParsing="false" onAction="#group3" text="Admin" textFill="WHITE" toggleGroup="$g1">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="21.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="day" layoutX="509.0" layoutY="608.0" prefHeight="42.0" prefWidth="150.0" promptText="Day" visible="false" />
+            <TextField fx:id="timeslot" layoutX="678.0" layoutY="608.0" prefHeight="42.0" prefWidth="150.0" promptText="Time Slot" visible="false" />
+            <TextField fx:id="casesnumber" layoutX="851.0" layoutY="608.0" prefHeight="42.0" prefWidth="150.0" promptText="Cases Number" visible="false" />
+            <Label fx:id="lab99" layoutX="775.0" layoutY="290.0" textFill="#cf0303">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lol1" layoutX="1014.0" layoutY="106.0" textFill="#f40f0f">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lol2" layoutX="1014.0" layoutY="180.0" textFill="#f40f0f">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lol3" layoutX="1014.0" layoutY="342.0" textFill="#f40f0f">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lol4" layoutX="1014.0" layoutY="419.0" textFill="#f40f0f">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lol5" layoutX="1014.0" layoutY="498.0" textFill="#f40f0f">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

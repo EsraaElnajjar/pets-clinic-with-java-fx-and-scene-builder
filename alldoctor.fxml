@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="783.0" prefWidth="1139.0" style="-fx-background-color: #5a6fa2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pets2.AlldoctorController">
+   <children>
+      <TableView fx:id="table3" layoutX="232.0" layoutY="151.0" prefHeight="390.0" prefWidth="822.0">
+        <columns>
+          <TableColumn fx:id="doctorname" prefWidth="202.39999389648438" text="Doctor Name" />
+          <TableColumn fx:id="day" prefWidth="171.99993896484375" text="Day" />
+            <TableColumn fx:id="timeslot" prefWidth="272.79998779296875" text="Time Slot" />
+            <TableColumn fx:id="casenumber" prefWidth="199.199951171875" text="Case Number" />
+        </columns>
+      </TableView>
+      <Button fx:id="refresh" layoutX="844.0" layoutY="654.0" mnemonicParsing="false" onAction="#refreshAction" onMouseEntered="#refreshupAction" onMouseExited="#refreshdownAction" prefHeight="59.0" prefWidth="231.0" style="-fx-background-radius: 200; -fx-background-color: #ffffff;" text="Refresh" textFill="#5a6fa2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="436.0" layoutY="58.0" prefHeight="62.0" prefWidth="326.0" text="Vets List" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="61.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="301.0" fitWidth="665.0" layoutX="-40.0" layoutY="489.0">
+         <image>
+            <Image url="@1426882-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="app91" layoutX="550.0" layoutY="654.0" mnemonicParsing="false" onAction="#gotobookAction" onMouseEntered="#getupAction" onMouseExited="#getdownAction" prefHeight="59.0" prefWidth="231.0" style="-fx-background-radius: 200; -fx-background-color: #ffffff;" text="Get An Appointment" textFill="#5a6fa2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="back990" layoutX="-21.0" layoutY="7.0" mnemonicParsing="false" onAction="#back990Action" prefHeight="59.0" prefWidth="231.0" style="-fx-background-radius: 200; -fx-background-color: #5a6fa2;" text="Back" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
